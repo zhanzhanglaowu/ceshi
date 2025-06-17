@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+		<title>距离1555年6月19日相差多少时间-时间计算网</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script>
+		function diff(date1) {
+		    // 将日期字符串转换为Date对象
+		    const d1 = new Date(date1);
+		    const d2 = new Date();
+		 
+		    // 获取时间差（毫秒）
+		    const diff = d2.getTime() - d1.getTime();
+		 //alert(diff);
+		    // 转换为秒
+		    const diffInSeconds = diff / 1000;
+		 
+		    // 转换为分钟、小时、天等（按需转换）
+		    const diffInMinutes = diffInSeconds / 60;
+		    const diffInHours = diffInMinutes / 60;
+		    const diffInDays = diffInHours / 24;
+			const diffInMonths = diffInDays / 30;
+			const diffInYears = diffInMonths / 365;
+			let arr=[diffInYears,diffInMonths,diffInDays,diffInHours,diffInMinutes,diffInSeconds];
+		    return arr;
+		}
+		 
+		function get(){
+		var year=document.getElementById('year').value;
+		var month=document.getElementById('month').value;
+		var day=document.getElementById('day').value;
+		var clock=document.getElementById('clock').value;
+		var fen=document.getElementById('fen').value;
+		if(year==""){year=2024;}
+		if(month==""){month=1;}
+		if(day==""){day=1;}
+		if(clock==""){clock=0;}
+		if(fen==""){fen=0;}
+		if(month<10&&month.length<2){month="0"+month;}
+		//alert(month);
+		if(day<10&&day.length<2){day="0"+day;}
+		if(clock<10&&clock.length<2){clock="0"+clock;}
+		if(fen<10&&fen.length<2){fen="0"+fen;}
+		var zz1=year+"-"+month+"-"+day+"T"+clock;
+		//zz1=string(zz1);
+		let time1 = new Date(zz1+':'+fen+':00');
+		//alert(time1);
+		//var yy=dateToTimestamp(time1);
+		//alert(time1.getTime());
+		//alert(yy);
+		let xx = diff(time1);
+		var yy='相差'+xx[1]+'月\r\n相差'+xx[2]+'日\r\n相差'+xx[3]+'时\r\n相差'+xx[4]+'分\r\n相差'+xx[5]+'秒';
+		document.getElementById('countdowndays').innerText=yy;
+}
+		</script>
+		<style>
+		#leftli li{
+			float:left;
+			margin:5px;
+		}
+		</style>
+	</head>
+</head>
+<body>
+    <header class="bg-primary" >
+        <div class="main-content container d-flex justify-content-between align-items-center">
+            <a style="text-decoration:none;" class="web-logo" href="/">返回首页</a>
+        </div>
+    </header>
+    <div class="main-content container" style='min-height:800px;'>
+        <h1 style="font-size:24px;text-align:center;">距离1555年6月19日相差多少时间</h1>
+        <div class="content-box">
+                <div class="form-row align-items-center justify-content-center">
+
+                    <div class="form-group col-md-3">
+                        <div class="d-flex align-items-center">
+                            <label for="month" style="width: 200px; margin-right: 0px;margin-top: 10px;">距离</label>
+                            <input type="number" class="form-control" id="year" name="year"  placeholder="" min="1" max="9999"  
+							value=1555							required>
+							<label style="margin: 10px;">年</label>
+                        </div>
+                    </div>
+					<div class="form-group col-md-2">
+					    <div class="d-flex align-items-center">
+					    <input type="number" class="form-control" id="month" name="month" placeholder="" min="1" max="12" 
+						value=6						required>
+						<label style="margin: 10px;">月</label>
+						</div>
+					</div>
+                    <div class="form-group col-md-2">
+					    <div class="d-flex align-items-center">
+                        <input type="number" class="form-control" id="day" name="day"  placeholder="" min="1" max="31"
+						value=19						required>
+						<label style="margin: 10px;">日</label>
+						</div>
+                    </div>
+                    <div class="form-group col-md-1">
+					    <div class="d-flex align-items-center">
+                        <input type="number" class="form-control" id="clock" name="clock"  placeholder="" min="0" max="24"
+						value=21						required>
+						<label style="margin: 10px;">时</label>
+						</div>
+                    </div>
+					<div class="form-group col-md-1">
+					    <div class="d-flex align-items-center">
+					    <input type="number" class="form-control" id="fen" name="fen"  placeholder="" min="0" max="60"
+						value=24						required>
+						<label style="margin: 10px;">分</label>
+						</div>
+					</div>
+                    <div class="form-group col-md-2" style="text-align: left;">
+                        <button onclick="get()" class="btn btn-primary btn-block">计算时间差</button>
+                    </div>
+                </div>
+        </div>
+
+        <h2>时间差结果如下：</h2>
+         <div id="content-know">
+		 <div class="countdowndays" id="countdowndays">
+
+		 </div>
+		 </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="list-info">
+                    <ul id='leftli'>
+					<li><a href="/haha/1928-1-3-17-21.html">1928年1月3日17时21分</a></li><li><a href="/haha/1540-7-9-16-56.html">1540年7月9日16时56分</a></li><li><a href="/haha/1951-8-7-18-15.html">1951年8月7日18时15分</a></li><li><a href="/haha/1955-8-10-10-11.html">1955年8月10日10时11分</a></li><li><a href="/haha/1750-4-10-18-2.html">1750年4月10日18时2分</a></li><li><a href="/haha/1827-1-19-15-45.html">1827年1月19日15时45分</a></li><li><a href="/haha/1964-1-21-23-14.html">1964年1月21日23时14分</a></li><li><a href="/haha/1511-6-4-8-35.html">1511年6月4日8时35分</a></li><li><a href="/haha/1801-12-5-4-55.html">1801年12月5日4时55分</a></li><li><a href="/haha/1925-1-2-18-49.html">1925年1月2日18时49分</a></li><li><a href="/haha/1826-3-1-22-18.html">1826年3月1日22时18分</a></li><li><a href="/haha/1620-5-4-3-55.html">1620年5月4日3时55分</a></li><li><a href="/haha/2021-2-11-0-32.html">2021年2月11日0时32分</a></li><li><a href="/haha/1512-7-4-18-51.html">1512年7月4日18时51分</a></li><li><a href="/haha/1720-9-11-1-16.html">1720年9月11日1时16分</a></li><li><a href="/haha/1705-2-16-14-52.html">1705年2月16日14时52分</a></li><li><a href="/haha/1670-9-8-11-27.html">1670年9月8日11时27分</a></li><li><a href="/haha/1535-5-4-11-11.html">1535年5月4日11时11分</a></li><li><a href="/haha/1789-11-7-20-30.html">1789年11月7日20时30分</a></li><li><a href="/haha/1837-6-12-19-43.html">1837年6月12日19时43分</a></li><li><a href="/haha/1746-2-11-15-28.html">1746年2月11日15时28分</a></li><li><a href="/haha/1543-2-5-0-42.html">1543年2月5日0时42分</a></li><li><a href="/haha/1522-11-21-2-14.html">1522年11月21日2时14分</a></li><li><a href="/haha/1794-6-10-5-44.html">1794年6月10日5时44分</a></li><li><a href="/haha/1739-6-5-15-29.html">1739年6月5日15时29分</a></li><li><a href="/haha/1540-5-2-11-56.html">1540年5月2日11时56分</a></li><li><a href="/haha/1709-3-12-4-4.html">1709年3月12日4时4分</a></li><li><a href="/haha/1762-6-5-7-4.html">1762年6月5日7时4分</a></li><li><a href="/haha/1667-11-12-21-5.html">1667年11月12日21时5分</a></li><li><a href="/haha/1898-7-1-18-25.html">1898年7月1日18时25分</a></li><li><a href="/haha/1521-8-2-8-23.html">1521年8月2日8时23分</a></li><li><a href="/haha/1701-5-13-21-9.html">1701年5月13日21时9分</a></li><li><a href="/haha/1860-8-9-23-24.html">1860年8月9日23时24分</a></li><li><a href="/haha/1918-8-15-21-15.html">1918年8月15日21时15分</a></li><li><a href="/haha/1532-1-8-8-43.html">1532年1月8日8时43分</a></li><li><a href="/haha/1818-10-13-1-53.html">1818年10月13日1时53分</a></li><li><a href="/haha/1816-9-2-22-44.html">1816年9月2日22时44分</a></li><li><a href="/haha/1647-10-1-0-2.html">1647年10月1日0时2分</a></li><li><a href="/haha/2023-11-2-14-21.html">2023年11月2日14时21分</a></li><li><a href="/haha/1846-8-6-8-3.html">1846年8月6日8时3分</a></li><li><a href="/haha/1587-2-7-5-21.html">1587年2月7日5时21分</a></li><li><a href="/haha/1566-10-11-14-39.html">1566年10月11日14时39分</a></li><li><a href="/haha/1600-3-19-23-21.html">1600年3月19日23时21分</a></li><li><a href="/haha/1769-10-15-2-5.html">1769年10月15日2时5分</a></li><li><a href="/haha/1980-2-19-23-26.html">1980年2月19日23时26分</a></li><li><a href="/haha/1796-3-18-2-11.html">1796年3月18日2时11分</a></li><li><a href="/haha/1974-7-19-11-35.html">1974年7月19日11时35分</a></li><li><a href="/haha/1828-11-6-4-7.html">1828年11月6日4时7分</a></li><li><a href="/haha/1845-11-11-15-53.html">1845年11月11日15时53分</a></li>
+					</ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+	    
+    <footer style="background: #f5f5f5; text-align: center; padding: 20px;">
+        <div class="container">
+            <p>时间计算网</p>
+        </div>
+    </footer>
+    </body>
+	<script>get();</script>
+</html>
